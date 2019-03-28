@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.quera.com.urlinfo.MainActivity"
+    android:padding="8dp">
+
+    <Button
+        android:id="@+id/submin_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:text="Submit"/>
+
+    <EditText
+        android:id="@+id/url_input"
+        android:layout_width="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/submin_btn"
+        android:hint="enter URL here"
+        android:layout_alignBaseline="@id/submin_btn"/>
+
+    <TextView
+        android:id="@+id/header_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/response_data"
+        android:hint="put header contents here..."/>
+
+    <TextView
+        android:id="@+id/response_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/url_input"
+        android:hint="put response here..."
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+
+</RelativeLayout>
